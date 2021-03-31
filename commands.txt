@@ -1,0 +1,11 @@
+# To upload the data to MongoDB from Mongo Shell
+
+mongoimport --uri mongodb+srv://analytics:analytics-password@mflix.r3c1c.mongodb.net/mflix --collection movies_initial --type csv --file movies_initial.csv --headerline
+
+mongoimport --uri mongodb+srv://analytics:analytics-password@mflix.r3c1c.mongodb.net/mflix --collection movies --type csv --file movies_initial.csv --headerline
+
+
+mongoimport --uri mongodb+srv://analytics:analytics-password@mflix.r3c1c.mongodb.net/mflix --collection people-raw --type json --file people-raw.json
+
+
+mongodb+srv://analytics:analytics-password@mflix.r3c1c.mongodb.net/movies_initial?retryWrites=true&w=majority

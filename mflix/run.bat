@@ -1,0 +1,3 @@
+call init
+
+flask run
